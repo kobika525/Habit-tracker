@@ -25,19 +25,7 @@ source venv/bin/activate      # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-A `.env` file is already included with safe local-dev defaults. Edit it (or copy
-`.env.example`) to point at your own MongoDB instance and to set a real `JWT_SECRET`
-before deploying:
 
-```
-PORT=8000
-MONGO_URI=mongodb://localhost:27017
-MONGO_DB_NAME=habit-tracker
-JWT_SECRET=change_this_secret
-JWT_ALGORITHM=HS256
-JWT_EXPIRE_DAYS=30
-CLIENT_URL=http://localhost:5173
-```
 
 Run the API:
 
